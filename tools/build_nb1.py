@@ -10,7 +10,7 @@ nb.header("Notebook 1 – Data selection, the prediction point and leakage",
 nb.md("""
 ## The case
 
-A telecom operator wants to predict churn. We use the dataset from the in-class exercise:
+A telecom operator wants to predict churn. The data owner gives you this information:
 
 | | |
 |---|---|
@@ -38,7 +38,7 @@ EXPORT_DATE = pd.Timestamp("2023-07-01")
 nb.md("""
 ## 1.1 Look at the raw excerpt first
 
-This is the 36-row excerpt you may know from the exercise. Before any code, just look at it.
+This is a 36-row excerpt of the data, as a data owner might e-mail it to you. Before any code, just look at it.
 Which columns worry you? Which values look odd?
 """)
 nb.code("""

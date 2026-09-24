@@ -1,5 +1,5 @@
 """Generate the expanded churn dataset (same schema as ExampleChurnDataset.xlsx, plus
-minutes_used_two_months_ago). Planted issues mirror the in-class exercise:
+minutes_used_two_months_ago). Planted issues:
 leaky features, structural missingness, inconsistent formats, invalid/valid outliers,
 duplicates and a high-cardinality postal code."""
 import numpy as np, pandas as pd

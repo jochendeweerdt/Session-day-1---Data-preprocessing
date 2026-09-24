@@ -1,0 +1,10 @@
+numpy
+pandas
+openpyxl
+matplotlib
+seaborn
+scikit-learn>=1.4
+skrub
+missingno
+pyod
+jupyterlab
