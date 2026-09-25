@@ -73,7 +73,7 @@ All data files are in the `data` folder and are loaded automatically by the note
 | File | Content |
 |---|---|
 | `churn_sample.xlsx` | A 36-row excerpt of a telecom churn dataset, as a data owner might send it to you. |
-| `churn.csv` | 5,040 customers with the same columns plus the usage two months ago. The data is **synthetic** and contains typical real-world problems on purpose: leaky columns, missing values, inconsistent spellings and formats, impossible values, extreme but valid values, duplicates. |
+| `churn.csv` | 5,040 customers with the columns of the excerpt plus a few extra columns from the data owner. The data is **synthetic** and contains typical real-world problems on purpose: leaky columns, missing values, inconsistent spellings and formats, impossible values, extreme but valid values, duplicates. |
 | `housing.csv` | 3,000 (artificial) house sales with the sale price as target. Note: the columns are separated by `;`. |
 | `creditcard_sample.csv` | 30,492 card transactions of European cardholders, of which 492 are fraudulent. The variables `V1`–`V28` are principal components of confidential features. |
 

@@ -69,6 +69,22 @@ i = pick(0.001); df.loc[i, "unpaid_invoices"] = 500                             
 i = rng.choice(np.where(~prepaid)[0], 4, replace=False); df.loc[i, "avg_monthly_bill"] = 99999.0 # invalid
 i = pick(0.002); df.loc[i, "minutes_used_last_month"] = rng.integers(2500, 4000, len(i))        # valid heavy users
 i = pick(0.002); df.loc[i, "helpdesk_calls_3m"] = rng.integers(15, 30, len(i))                  # valid extreme
+# --- hidden leaks for the "leakage detective" exercise (Notebook 1); separate RNG keeps all other values unchanged ---
+rng2 = np.random.default_rng(7)
+# 1) retention offer: made by the call centre when a customer calls to cancel (in June), so mostly for churners
+df["retention_offer_sent"] = np.where(df.churn == 1, (rng2.random(N) < 0.7), (rng2.random(N) < 0.06)).astype(int)
+# 2) average churn per postal code, computed on ALL customers (including their own label and the future test set)
+df["region_churn_rate"] = pd.Series(churn).groupby(region).transform("mean").round(3).values
+# 3) contract end date: filled in when a postpaid contract is terminated (June), or a scheduled end of a fixed-term contract
+end = pd.Series(pd.NaT, index=df.index)
+post_churn = (df.churn == 1) & (~prepaid)
+end[post_churn] = PRED + pd.to_timedelta(rng2.integers(0, 30, N), unit="D")[post_churn]
+fixed = (df.churn == 0) & (~prepaid) & (rng2.random(N) < 0.15)
+end[fixed] = pd.Timestamp("2023-09-01") + pd.to_timedelta(rng2.integers(0, 700, N), unit="D")[fixed]
+df["contract_end_date"] = pd.to_datetime(end).dt.strftime("%Y-%m-%d")
+cols = [c for c in df.columns if c != "churn"] + ["churn"]
+df = df[cols]
+
 dup = df.sample(40, random_state=1)
 df = pd.concat([df, dup]).sample(frac=1, random_state=2).reset_index(drop=True)
 df.to_csv("data/churn.csv", index=False)

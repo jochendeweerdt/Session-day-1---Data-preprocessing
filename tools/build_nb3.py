@@ -38,7 +38,8 @@ pd.set_option("display.width", 200)
 PREDICTION_POINT = pd.Timestamp("2023-06-01")
 
 raw = pd.read_csv(DATA + "churn.csv", dtype={"region_code": str})
-raw = raw.drop(columns=["minutes_used_current_month", "last_call_date", "helpdesk_calls_3m"])   # leaky, see Notebook 1
+raw = raw.drop(columns=["minutes_used_current_month", "last_call_date", "helpdesk_calls_3m",      # leaky, see Notebook 1
+                        "retention_offer_sent", "region_churn_rate", "contract_end_date"])
 print(raw.shape)
 """)
 
