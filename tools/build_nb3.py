@@ -134,7 +134,7 @@ X_train.head()
 nb.md("""
 ## 3.6 Learned transformations in one ColumnTransformer
 
-- numeric: impute (median, plus missing indicator) → optional log → standardise
+- numeric: impute (median, plus missing indicator) → log (for skewed features) → standardise
 - `contract_type`: one-hot encoding
 - `postal_code` (high cardinality): target encoding. `TargetEncoder` uses internal cross-fitting, so a row's own
   label is never used to encode that row.
@@ -266,7 +266,7 @@ print(pd.DataFrame(rows))
 # for boosting; the postal code adds a little signal, target encoding keeps it to one column.
 """)
 
-nb.exercise("3B – Write your own learned transformer (optional, code)", """
+nb.exercise("3B – Write your own learned transformer (write code)", """
 Write a `Winsorizer` that caps every column at the 1st and 99th percentile **learned during `fit`** (so on the
 training data only), and use it instead of the log transform. Hint: subclass `BaseEstimator` and `TransformerMixin`,
 store the percentiles in `fit`, apply `clip` in `transform`.

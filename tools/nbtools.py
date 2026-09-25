@@ -2,7 +2,7 @@
 
 Conventions
 - Section numbers (e.g. 1.3) match the section numbers used on the slides.
-- Exercise A = run & tweak (change a parameter, interpret). Exercise B = optional, write a few lines.
+- Exercise A = basic: run & tweak (change a parameter, interpret). Exercise B = more challenging: write a few lines.
 - Solutions are Colab form cells: the code is hidden until you click "Show code".
 - GITHUB_REPO = "OWNER/REPO" is a placeholder; tools/set_repo_links.py replaces it everywhere.
 """
@@ -51,13 +51,11 @@ Slides: *Session 1.2 – Data preprocessing, EDA and anomaly detection*, part {s
 
 **Goal.** {goal}
 
-**Time in class:** about {duration} minutes.
-
 **How to use this notebook**
 1. `File → Save a copy in Drive` first, so your changes are kept.
 2. Run the cells from top to bottom (`Shift + Enter`). The lecturer demo sections run as they are.
-3. **Exercise A** (everyone): change a parameter or a line that is marked `# <- change`, rerun, and answer the question.
-4. **Exercise B** (optional): write a few lines of code yourself.
+3. **Exercise A** (basic): change a parameter or a line that is marked `# <- change`, rerun, and answer the questions.
+4. **Exercise B** (more challenging): write a few lines of code yourself.
 5. Solutions are in hidden cells titled *Solution*. Click *Show code* only after you tried.
 
 Section numbers (e.g. {section}.3) correspond to the section numbers on the slides.

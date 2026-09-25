@@ -16,18 +16,18 @@ You do not need to install anything. Everything runs in your browser with **Goog
 2. Open [colab.research.google.com](https://colab.research.google.com) once and sign in, so you know it works.
 3. Bring a laptop. A tablet works for reading, but typing code is much easier on a laptop.
 
-No prior Python experience is required for the core exercises (Exercise A).
+No prior Python experience is required for Exercise A. Exercise B asks you to write a few lines of code.
 
 ---
 
 ## The notebooks
 
-| # | Notebook | Topic | Data | Time in class | Open |
-|---|---|---|---|---|---|
-| 1 | `NB1_selection_and_leakage` | Data selection, the prediction point and data leakage | Telecom churn | 10 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jochendeweerdt/Session-day-1---Data-preprocessing/blob/main/notebooks/NB1_selection_and_leakage.ipynb) |
-| 2 | `NB2_exploratory_data_analysis` | Exploratory data analysis (EDA) | House sales | 30 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jochendeweerdt/Session-day-1---Data-preprocessing/blob/main/notebooks/NB2_exploratory_data_analysis.ipynb) |
-| 3 | `NB3_cleaning_transformation_pipelines` | Cleaning, transformation and pipelines | Telecom churn | 25 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jochendeweerdt/Session-day-1---Data-preprocessing/blob/main/notebooks/NB3_cleaning_transformation_pipelines.ipynb) |
-| 4 | `NB4_anomaly_detection` | Anomaly detection | Credit card transactions | 20 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jochendeweerdt/Session-day-1---Data-preprocessing/blob/main/notebooks/NB4_anomaly_detection.ipynb) |
+| # | Notebook | Topic | Data | Open |
+|---|---|---|---|---|
+| 1 | `NB1_selection_and_leakage` | Data selection, the prediction point and data leakage | Telecom churn | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jochendeweerdt/Session-day-1---Data-preprocessing/blob/main/notebooks/NB1_selection_and_leakage.ipynb) |
+| 2 | `NB2_exploratory_data_analysis` | Exploratory data analysis (EDA) | House sales | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jochendeweerdt/Session-day-1---Data-preprocessing/blob/main/notebooks/NB2_exploratory_data_analysis.ipynb) |
+| 3 | `NB3_cleaning_transformation_pipelines` | Cleaning, transformation and pipelines | Telecom churn | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jochendeweerdt/Session-day-1---Data-preprocessing/blob/main/notebooks/NB3_cleaning_transformation_pipelines.ipynb) |
+| 4 | `NB4_anomaly_detection` | Anomaly detection | Credit card transactions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jochendeweerdt/Session-day-1---Data-preprocessing/blob/main/notebooks/NB4_anomaly_detection.ipynb) |
 
 The slides contain the same links and a QR code for each notebook.
 
@@ -47,9 +47,9 @@ The slides contain the same links and a QR code for each notebook.
 
 Every notebook has two kinds of exercises:
 
-- **Exercise A – for everyone.** Change a value in a line marked `# <- change`, run the cell again, and answer
+- **Exercise A – basic.** Change a value in a line marked `# <- change`, run the cell again, and answer
   the questions in the text. No programming needed.
-- **Exercise B – optional.** Write a few lines of code yourself. Useful if you want to practise Python.
+- **Exercise B – more challenging.** Write a few lines of code yourself.
 
 **Solutions** are in cells titled *Solution*. Their code is hidden: click *Show code* (or double-click the
 cell) to see it. Try the exercise first.

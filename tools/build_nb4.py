@@ -169,7 +169,7 @@ for k in (50, 250, 1000):
 # fed back as labels, which later allows a supervised model (see the session on fraud analytics).
 """)
 
-nb.exercise("4B – More detectors and an ensemble (optional, code)", """
+nb.exercise("4B – More detectors and an ensemble (write code)", """
 The PyOD library offers 60+ detectors with the same interface (`fit`, then `decision_scores_`).
 Try `ECOD` (parameter-free, based on empirical tail probabilities) and one other detector of your choice.
 Then build a simple ensemble: average the **ranks** of the scores of several detectors. Does it beat the best single detector?

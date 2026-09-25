@@ -161,7 +161,7 @@ for f in [SAFE, SAFE + ["helpdesk_calls_3m"], SAFE + ["minutes_june"]]:
     print(len(f), "features ->", round(test_auc(f), 3))
 """)
 
-nb.exercise("1B – A simple leakage alarm (optional, code)", """
+nb.exercise("1B – A simple leakage alarm (write code)", """
 Write a function `single_feature_auc(X, y, feature)` that returns the AUC of a model trained on **one** feature only.
 Apply it to every column of `X_train` (use cross-validation on the training set, not the test set!) and flag features with an AUC above 0.9.
 

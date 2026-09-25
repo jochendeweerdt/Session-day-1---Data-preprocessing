@@ -195,7 +195,7 @@ plt.show()
 # Transparency shows where the mass of the data is; the heavy grid and frame add nothing.
 """)
 
-nb.exercise("2B – Let an AI assistant do the EDA, then review it (optional)", """
+nb.exercise("2B – Let an AI assistant do the EDA, then review it", """
 In Colab, open the Gemini panel (or the *Data Science Agent*) and ask: *"Perform an exploratory data analysis of the
 dataframe `house` with SalePrice as target."* Then review the generated analysis with this checklist:
 
